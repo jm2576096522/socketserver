@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="netos.pmait.dao.HisDeviceMapper">
+	<!-- <resultMap id="BaseResultMap" type="netos.pmait.model.HisDevice">
+
+		<result column="mac" jdbcType="VARCHAR" property="mac" />
+
+		<result column="device_state" jdbcType="INTEGER" property="state" />
+
+	</resultMap>
+
+
+	<select id="queryDeviceInfo" parameterType="java.lang.String"
+		resultMap="BaseResultMap">
+		select mac,device_state from tb_device_online_state where
+		mac=#{mac,jdbcType=VARCHAR}
+
+	</select>
+
+
+
+	<insert id="insertDeviceMac" parameterType="netos.pmait.model.HisDevice">
+		insert into tb_device_online_state (mac, device_state,online_time)
+		values ( #{mac,jdbcType=VARCHAR}, #{state,jdbcType=INTEGER},
+		#{onlineTime,jdbcType=TIMESTAMP})
+	</insert>
+
+	<update id="updateDeviceInfo" parameterType="netos.pmait.model.HisDevice">
+		update tb_device_online_state 
+		set device_state = #{state,jdbcType=INTEGER} ,
+		online_time= #{onlineTime,jdbcType=TIMESTAMP} where mac
+		=#{mac,jdbcType=VARCHAR}
+
+	</update>
+
+
+
+	<sql id="Base_Column_List">
+		id, wardid, bedid, bedcode, roomNo, roomtypeid, roomtypename, bedgroup,
+		price, syndate,
+		nurseId, nurseName, deviceId
+	</sql> -->
+
+</mapper>
